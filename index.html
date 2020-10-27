@@ -7,18 +7,19 @@
 </head>
 <body>
     <h1>Bienvenido al Workshop de Git y Github</h1>
-    <imput id="num1" placeholder="Número 1"></imput>
-    <imput id="num2" placeholder="Número 2"></imput>
-
+    <imput id="num1" placeholder="Número 1">
+    <imput id="num2" placeholder="Número 2">
+    <button onclick="operaciones('Sumar')" >Sumar</button>
 
 </body>
 <script>
-    cont operaciones =(accion) =>{
+    const operaciones =(accion) =>{
         const num1 = parseInt(document.getElementById('num1').value);
         const num2 = parseInt(document.getElementById('num2').value);
 
         switch(accion){
             default:
+                alert('El resultado de la suma es: '+(num1+num2));
         }
     }
 </script>
